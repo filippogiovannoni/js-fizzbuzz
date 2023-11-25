@@ -30,3 +30,7 @@ for (let n = 1; n <= 100; n++) {
         console.log(n)
     }
 }
+
+// Operatore modulo (%): verifico se un numero è multiplo di 3 quando per esempio:
+// Ho il numero 6, il 3 ci sta dentro 2 volte e il resto è 0, quindi 0 == 0 TRUE, viene loggato 'Fizz' dalle condizionali
+// Ho il numero 7, il 3 ci sta dentro 2 volte e il resto è 1, quindi 0 == 1 FALSE, viene loggato solamente il numero
