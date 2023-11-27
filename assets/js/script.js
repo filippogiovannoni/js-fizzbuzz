@@ -7,27 +7,39 @@
 //Ciclo for che stampa numeri da 1 a 100
 for (let n = 1; n <= 100; n++) {
 
+    const boxElement = document.createElement('div')
+
+    boxElement.classList.add('box')
+
+    const containerEl = document.querySelector('.container')
+
+    containerEl.append(boxElement)
+
     //Verifico se sono multipli tramite l'operatore modulo (%)
 
     //Se il numero della variabile n è multiplo di 3 e di 5
     if (n % 3 == 0 && n % 5 == 0) {
         //Viene stampato in console FizzBuzz
         console.log('FizzBuzz');
+        boxElement.innerText = 'FizzBuzz'
     }
     //Se il numero della variabile n è multiplo di 3
     else if (n % 3 == 0) {
         //Viene stampato in console Fizz
         console.log('Fizz');
+        boxElement.innerText = 'Fizz'
 
         //Se il numero della variabile n è multiplo di 5
     } else if (n % 5 == 0) {
         //Viene stampato in console Buzz
         console.log('Buzz');
+        boxElement.innerText = 'Buzz'
     }
 
     //Altrimenti viene stampato il numero della variabile n
     else {
         console.log(n)
+        boxElement.innerText = n
     }
 }
 
